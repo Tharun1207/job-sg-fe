@@ -1,13 +1,74 @@
-body {
+/* Importing a font called Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Targeting every element, and stripping off the margin and applying the font */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #a3eca6;
+}
+
+/* Navbar styles */
+.navBar {
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  position: fixed;
+  background-color: white;
+  top: 0;
+}
+.navBar .brand img {
+  max-block-size: 30px;
+  align-items: center;
+  display: inline-block;
+}
+.brandName {
+  color: #a3eca6;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  align-items: center;
+  margin-right: 0;
+  padding: 0;
+}
+.navBar .links {
+  margin-left: auto;
+}
+.profile {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 0;
+  margin-right: 30px;
+}
+.navBar a {
+  text-decoration: none;
+  padding: 6px;
+}
+.navBar a:hover {
+  color: #67c66a;
+}
+
+/* Footer styles */
+.footer {
+    background: #a3eca6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Content page styles */
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #a3eca6;
 }
