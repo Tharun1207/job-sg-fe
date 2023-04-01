@@ -1,0 +1,40 @@
+{
+    "shortJobListings": [
+        {
+            "jobTitle": "sweeper",
+            "jobDescription": "testing 123 ",
+            "totalPay": "$100",
+            "startDateTime": "1970-01-01T00:00:00.037Z",
+            "endDateTime": "1970-01-01T00:00:00.099Z",
+            "imageLink": "./images/sweeper.png",
+            "id": 1
+        },
+        {
+            "jobTitle": "programmer",
+            "jobDescription": "testing 123 ",
+            "totalPay": "$2000",
+            "startDateTime": "1970-01-01T00:00:00.037Z",
+            "endDateTime": "1970-01-01T00:00:00.099Z",
+            "imageLink": "./images/programmer-icon.png",
+            "id": 2
+        },
+        {
+            "jobTitle": "dancer",
+            "jobDescription": "testing 123 ",
+            "totalPay": "$150",
+            "startDateTime": "1970-01-01T00:00:00.037Z",
+            "endDateTime": "1970-01-01T00:00:00.099Z",
+            "imageLink": "",
+            "id": 3
+        },
+        {
+            "jobTitle": "construction worker",
+            "jobDescription": "testing 123 ",
+            "totalPay": "$500",
+            "startDateTime": "1970-01-01T00:00:00.037Z",
+            "endDateTime": "1970-01-01T00:00:00.099Z",
+            "imageLink": "",
+            "id": 4
+        }
+    ]
+}

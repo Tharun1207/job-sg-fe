@@ -7,13 +7,13 @@ const NavBar = () => {
             {/* Clickable brand name and logo to go to homepage */}
             <Link to="/" className="brand">
                 <img src={require("./images/logo.png")}></img>
-                <Link to="/" className="brandName">JobSG</Link>
+                <h1 className="brandName">JobSG</h1>
             </Link>
 
             {/* Other clickable links */}
             <div className="links">
                 <Link to="/" className="searchJob">Search Job</Link>
-                <Link to="/" className="profile">
+                <Link to="/login" className="profile">
                     <img src={require("./images/account_circle.png")}></img>
                 </Link>
             </div>
