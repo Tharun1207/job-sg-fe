@@ -13,11 +13,16 @@ const JobListingDetails = () => {
             { jobListing && (
                 <article>
                     <h2 className="job-listing-title">{ jobListing.jobTitle }</h2>
-                    <img src={require("./images/sweeper.png")} className="job-listing-image"></img>
-                    <p>Job Description: { jobListing.jobDescription }</p>
-                    <p>Total Pay: { jobListing.totalPay }</p>
-                    <p>Start Date & Time: { jobListing.startDateTime }</p>
-                    <p>End Date & Time: { jobListing.endDateTime }</p>
+                    <img src={`${jobListing.imageLink}`} className="job-listing-image"></img>
+                    <br></br>
+                    <label>Job Description:</label>
+                    <p>{ jobListing.jobDescription }</p>
+                    <label>Total Pay:</label>
+                    <p>{ jobListing.totalPay }</p>
+                    <label>Start Date & Time:</label>
+                    <p>{ jobListing.startDateTime }</p>
+                    <label>End Date & Time:</label>
+                    <p>{ jobListing.endDateTime }</p>
                 </article>
             )}
         </div>

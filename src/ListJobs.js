@@ -6,15 +6,19 @@ const ListJobs = ({ jobListings, title }) => {
             <h2 className="all-jobs-title">{ title }</h2>
             {jobListings.map((jl) => (
                 <div className="job-listing-preview" key = { jl.id }>                    
-                    <Link to={`/joblistingdetails/${jl.id}`} className="job-listing-links">
-                        <img className = "job-image" src={() => require(jl.imageLink) }></img>
+                        <img className = "job-image" src={`${jl.imageLink}`}></img>
                         <p className="jobTitle">Job Title: { jl.jobTitle }</p>
-                        <p>Job Description: { jl.jobDescription }</p>
-                        <p>Total Pay: { jl.totalPay }</p>
-                        <p>Start Date & Time: { jl.startDateTime }</p>
-                        <p>End Date & Time: { jl.endDateTime }</p>
-                        <button>Find out more!</button>
-                    </Link>
+                        <label>Job Description:</label>
+                        <p>{ jl.jobDescription }</p>
+                        <label>Total Pay:</label>
+                        <p>{ jl.totalPay }</p>
+                        <label>Start Date & Time:</label>
+                        <p>{ jl.startDateTime }</p>
+                        <label>End Date & Time:</label>
+                        <p>{ jl.endDateTime }</p>
+                        <Link to={`/joblistingdetails/${jl.id}`} className="job-listing-links">
+                            <button>Find out more!</button>
+                        </Link>
                 </div>
             ))
             }
